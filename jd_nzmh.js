@@ -6,7 +6,7 @@
 ============Quantumultx===============
 [task_local]
 #女装盲盒
-35 1,23 * * * https://raw.githubusercontent.com/KingRan/JDJB/main/jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+35 1,23 * * * jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
@@ -39,7 +39,7 @@ if ($.isNode()) {
   }
   console.log('女装盲盒\n' +
       '活动时间：2022-3-1至2022-3-31\n' +
-      '活动地址：https://anmp.jd.com/babelDiy/Zeus/4BHyHKHHcfq58PNmKbmfwdMQRNtp/index.html');
+      '活动地址：https://anmp.jd.com/babelDiy/Zeus/3qshXVjiSE2M9rfaCpntAXfkg166/index.html');
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
@@ -59,7 +59,7 @@ if ($.isNode()) {
         continue
       }
       try {
-        await jdMh('https://anmp.jd.com/babelDiy/Zeus/4BHyHKHHcfq58PNmKbmfwdMQRNtp/index.html')
+        await jdMh('https://anmp.jd.com/babelDiy/Zeus/3qshXVjiSE2M9rfaCpntAXfkg166/index.html')
       } catch (e) {
         $.logErr(e)
       }
