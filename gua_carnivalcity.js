@@ -13,17 +13,17 @@ c、 每日第10001-30000名可获得20个京豆
 ===================quantumultx================
 [task_local]
 #京东手机狂欢城
-0 0-18/6 * 10,11 * gua_carnivalcity.js, tag=京东手机狂欢城, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0-18/6 * 4 * gua_carnivalcity.js, tag=京东手机狂欢城, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 =====================Loon================
 [Script]
-cron "0 0-18/6 * 10,11 *" script-path=gua_carnivalcity.js, tag=京东手机狂欢城
+cron "0 0-18/6 * 4 *" script-path=gua_carnivalcity.js, tag=京东手机狂欢城
 
 ====================Surge================
-京东手机狂欢城 = type=cron,cronexp=0 0-18/6 * 10,11 *,wake-system=1,timeout=3600,script-path=gua_carnivalcity.js
+京东手机狂欢城 = type=cron,cronexp=0 0-18/6 * 4 *,wake-system=1,timeout=3600,script-path=gua_carnivalcity.js
 
 ============小火箭=========
-5G狂欢城 = type=cron,script-path=gua_carnivalcity.js, cronexpr="0 0-18/6 * 10,11 *", timeout=3600, enable=true
+5G狂欢城 = type=cron,script-path=gua_carnivalcity.js, cronexpr="0 0-18/6 * 4 *", timeout=3600, enable=true
 */
 const $ = new Env('京东手机狂欢城');
 const notify = $.isNode() ? require('./sendNotify') : '';
